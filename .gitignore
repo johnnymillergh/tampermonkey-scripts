@@ -15,6 +15,7 @@ dist/
 # IDE specific files
 .vscode/
 .idea/
+.history/
 *.swp
 *.swo
 *~
