@@ -1,0 +1,24 @@
+{
+  "name": "tampermonkey-scripts",
+  "version": "1.0.0",
+  "description": "A collection of userscripts for Tampermonkey browser extension",
+  "scripts": {
+    "test": "echo \"No tests specified yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnymillergh/tampermonkey-scripts.git"
+  },
+  "keywords": [
+    "tampermonkey",
+    "userscripts",
+    "browser-extension",
+    "javascript"
+  ],
+  "author": "johnnymillergh",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/johnnymillergh/tampermonkey-scripts/issues"
+  },
+  "homepage": "https://github.com/johnnymillergh/tampermonkey-scripts#readme"
+}
