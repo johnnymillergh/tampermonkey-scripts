@@ -4,7 +4,8 @@
 // @version      1.0.1
 // @description  Centers the Google search bar on the page
 // @author       johnnymillergh
-// @match        https://www.google.*/search?q=*
+// @match        https://www.google.com/search?q=*
+// @include      /^https:\/\/www\.google\.[a-z.]+\/search\?q=.*/
 // @grant        none
 // @license      Apache-2.0
 // @homepage     https://github.com/johnnymillergh/tampermonkey-scripts
