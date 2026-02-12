@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Center Google Search Bar
 // @namespace    https://github.com/johnnymillergh/tampermonkey-scripts
-// @version      1.0.0
+// @version      1.0.1
 // @description  Centers the Google search bar on the page
 // @author       johnnymillergh
-// @match        https://www.google.com/search?q=*
+// @match        https://www.google.*/search?q=*
 // @grant        none
 // @license      Apache-2.0
 // @homepage     https://github.com/johnnymillergh/tampermonkey-scripts
