@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Center Google Search Bar
 // @namespace    https://github.com/johnnymillergh/tampermonkey-scripts
-// @version      1.0.0
+// @version      1.0.1
 // @description  Centers the Google search bar on the page
 // @author       johnnymillergh
 // @match        https://www.google.com/search?q=*
+// @include      /^https:\/\/www\.google\.[a-z]{2,3}(\.[a-z]{2})?\/search\?q=.+$/
 // @grant        none
 // @license      Apache-2.0
 // @homepage     https://github.com/johnnymillergh/tampermonkey-scripts
@@ -26,15 +27,6 @@
 
     const customStyles = `
         @media (min-width: 1537px) {
-            /* AI 搜索 */
-            .GcKpu {
-                display: flex;
-                justify-content: center;
-            }
-            #extabar {
-                display: flex;
-                justify-content: center;
-            }
             #searchform .tsf {
                 margin: 0 auto;
             }
