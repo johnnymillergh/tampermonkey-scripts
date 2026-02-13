@@ -7,6 +7,7 @@
 // @match        https://www.google.com/search?q=*
 // @match        https://www.bing.com/search?q=*
 // @include      /^https:\/\/www\.google\.[a-z]{2,3}(\.[a-z]{2})?\/search\?q=.+$/
+// @include      /^https:\/\/www\.bing\.[a-z]{2,3}(\.[a-z]{2})?\/search\?q=.+$/
 // @grant        none
 // @license      Apache-2.0
 // @homepage     https://github.com/johnnymillergh/tampermonkey-scripts
@@ -32,8 +33,8 @@
             #searchform .tsf {
                 margin: 0 auto;
             }
-            /* Bing search form centering */
-            #b_content {
+            /* Bing search results centering */
+            #b_results {
                 margin: 0 auto;
             }
             /* Center page body */
