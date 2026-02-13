@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Center Google/Bing Search Bar
 // @namespace    https://github.com/johnnymillergh/tampermonkey-scripts
-// @version      1.1.0
+// @version      1.0.2
 // @description  Centers the Google and Bing search bar on the page
 // @author       johnnymillergh
 // @match        https://www.google.com/search?q=*
@@ -29,15 +29,9 @@
 
     const customStyles = `
         @media (min-width: 1537px) {
-            /* Google search form centering */
             #searchform .tsf {
                 margin: 0 auto;
             }
-            /* Bing search results centering */
-            #b_results {
-                margin: 0 auto;
-            }
-            /* Center page body */
             body {
                 max-width: max-content;
                 margin-left: auto;
