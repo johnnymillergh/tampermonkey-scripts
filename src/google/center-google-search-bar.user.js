@@ -1,10 +1,11 @@
 // ==UserScript==
-// @name         Center Google Search Bar
+// @name         Center Google/Bing Search Bar
 // @namespace    https://github.com/johnnymillergh/tampermonkey-scripts
-// @version      1.0.1
-// @description  Centers the Google search bar on the page
+// @version      1.1.0
+// @description  Centers the Google and Bing search bar on the page
 // @author       johnnymillergh
 // @match        https://www.google.com/search?q=*
+// @match        https://www.bing.com/search?q=*
 // @include      /^https:\/\/www\.google\.[a-z]{2,3}(\.[a-z]{2})?\/search\?q=.+$/
 // @grant        none
 // @license      Apache-2.0
@@ -17,7 +18,7 @@
 (function () {
     'use strict';
 
-    console.log('[Center Google Search Bar] loaded!');
+    console.log('[Center Google/Bing Search Bar] loaded!');
 
     function addStyle (css) {
         const style = document.createElement('style');
@@ -27,9 +28,15 @@
 
     const customStyles = `
         @media (min-width: 1537px) {
+            /* Google search form centering */
             #searchform .tsf {
                 margin: 0 auto;
             }
+            /* Bing search form centering */
+            #b_content {
+                margin: 0 auto;
+            }
+            /* Center page body */
             body {
                 max-width: max-content;
                 margin-left: auto;
