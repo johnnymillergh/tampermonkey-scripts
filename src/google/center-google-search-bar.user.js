@@ -4,8 +4,8 @@
 // @version      1.1.0
 // @description  Centers the Google search bar on the page
 // @author       johnnymillergh
-// @match        https://www.google.com/search?q=*
-// @match        https://www.bing.com/search?qs=*
+// @match        https://www.google.com/search?*
+// @match        https://www.bing.com/search?*
 // @include      /^https:\/\/www\.google\.[a-z]{2,3}(\.[a-z]{2})?\/search\?q=.+$/
 // @include      /^https:\/\/www\.bing\.[a-z]{2,3}(\.[a-z]{2})?\/search\?qs=.+$/
 // @grant        none
